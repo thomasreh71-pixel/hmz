@@ -15,17 +15,20 @@
 <p class="eyebrow">Kontaktformular</p>
 <h1>Wie können wir Ihnen helfen?</h1>
 <p class="lead">Bitte geben Sie Ihre Kontaktdaten, die genaue Lage der Wohnung und Ihr Anliegen an.</p>
-<form class="contact-form" id="hmz-contact-form">
+<form class="contact-form" id="hmz-contact-form" novalidate>
 <div class="form-grid">
 <label>Vorname<input type="text" name="vorname" autocomplete="given-name" required></label>
 <label>Name<input type="text" name="name" autocomplete="family-name" required></label>
 <label>Telefonnummer<input type="tel" name="telefon" autocomplete="tel" required></label>
-<label>Straße<input type="text" name="strasse" autocomplete="address-line1" required></label>
+<label>E-Mail-Adresse<input type="email" name="email" autocomplete="email" inputmode="email" pattern="^[^\s@]+@[^\s@\.]+\.[^\s@\.]{2,}$" title="Bitte geben Sie eine vollständige E-Mail-Adresse ein, z. B. name@firma.de." required></label>
+<label>Straße<input type="text" name="strasse" autocomplete="address-line1" pattern="^[A-Za-zÄÖÜäöüßÀ-ÿ\s.'-]+$" title="Bitte tragen Sie hier nur den Straßennamen ein. Zahlen gehören in das Feld Hausnummer." required></label>
 <label>Hausnummer<input type="text" name="hausnummer" required></label>
+<label>Postleitzahl<input type="text" name="postleitzahl" autocomplete="postal-code" inputmode="numeric" pattern="^[0-9]{5}$" maxlength="5" placeholder="z. B. 16767" required></label>
+<label>Ort<input type="text" name="ort" autocomplete="address-level2" pattern="^[A-Za-zÄÖÜäöüßÀ-ÿ\s.'-]+$" placeholder="z. B. Leegebruch" required></label>
 <label>Etage<input type="text" name="etage" placeholder="z. B. 2. Etage" required></label>
-<label>Lage der Wohnung<input type="text" name="lage" placeholder="z. B. rechts, Mitte oder links" required></label>
-<label>Wohnungsnummer<input type="text" name="wohnungsnummer"></label>
-<label>ggf. Kundennummer<input type="text" name="kundennummer" placeholder="z. B. 01234 oder keine Angabe"></label>
+<label>Lage der Wohnung<input type="text" name="lage" placeholder="z. B. rechts, Mitte oder links"></label>
+<label>Wohnungsnummer<input type="text" name="wohnungsnummer" placeholder="z. B. 123 oder keine Angabe"></label>
+<label>Kundennummer<input type="text" name="kundennummer" placeholder="z. B. 01234 oder keine Angabe"></label>
 <label class="form-full">Ihr Anliegen<textarea name="anliegen" rows="7" required></textarea></label>
 </div>
 <label class="privacy-check"><input type="checkbox" required><span>Ich stimme zu, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden. Hinweise finden Sie in der <a href="datenschutz.html">Datenschutzerklärung</a>.</span></label>

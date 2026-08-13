@@ -7,3 +7,4 @@ img[src="assets/service-hausmeister.webp"],img[src="assets/service-reinigung.web
 @media(max-width:900px){.nav-wrap{height:auto;min-height:88px;flex-wrap:wrap;padding:9px 0 12px;gap:8px}.brand{width:100%;gap:10px}.brand-text{display:block;white-space:normal;line-height:1.2}.mainnav{display:flex;width:100%;justify-content:flex-start;gap:8px 18px;flex-wrap:wrap;padding-left:82px}.mainnav a{font-size:.88rem}.menu-toggle{display:none}}
 @media(max-width:620px){.nav-wrap{padding:7px 0 10px}.brand-text{display:block;font-size:.78rem;line-height:1.18}.mobile-brand-break{display:inline}.mainnav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;padding-left:68px;gap:5px 12px}.mainnav a{font-size:.82rem}.hmz-logo-header{flex:0 0 58px}}
 .mobile-brand-break{display:none}
+.brand-text{font-size:1.15rem}
