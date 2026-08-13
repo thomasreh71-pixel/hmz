@@ -12,25 +12,7 @@
   <header class="site-header">
     <div class="wrap nav-wrap">
       <a class="brand" href="#top" aria-label="HMZ Startseite">
-        <svg class="hmz-logo hmz-logo-header" viewBox="0 0 220 220" role="img" aria-label="HMZ Hausmeisterzentrale Jüstel und Gebäudeservice">
-          <defs>
-            <path id="topArc" d="M 28,111 A 82,82 0 0,1 192,111"/>
-            <path id="bottomArc" d="M 38,139 A 82,82 0 0,0 182,139"/>
-            <clipPath id="logoCircle"><circle cx="110" cy="110" r="58"/></clipPath>
-          </defs>
-          <circle cx="110" cy="110" r="104" fill="#fff" stroke="#282878" stroke-width="5"/>
-          <text class="logo-ring-text" font-size="17"><textPath href="#topArc" startOffset="50%" text-anchor="middle">Jüstel &amp; Gebäudeservice</textPath></text>
-          <text class="logo-ring-text" font-size="15"><textPath href="#bottomArc" startOffset="50%" text-anchor="middle">GmbH &amp; Co. KG</textPath></text>
-          <text x="110" y="43" text-anchor="middle" class="logo-center-text">Hausmeisterzentrale</text>
-          <g clip-path="url(#logoCircle)">
-            <rect x="52" y="52" width="58" height="58" fill="#e53b35"/>
-            <rect x="110" y="52" width="58" height="58" fill="#f08a24"/>
-            <rect x="52" y="110" width="58" height="58" fill="#5aa4db"/>
-            <rect x="110" y="110" width="58" height="58" fill="#f4c928"/>
-          </g>
-          <circle cx="110" cy="110" r="58" fill="none" stroke="#282878" stroke-width="2"/>
-          <path d="M77 117 L110 82 L143 117 V148 H120 V126 H100 V148 H77 Z" fill="none" stroke="#fff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
-        </svg>
+        <img class="hmz-logo-header" src="assets/hmz-logo-original.jpg" alt="Hausmeisterzentrale Jüstel und Gebäudeservice GmbH & Co. KG">
         <span class="brand-text">Gebäudeservice</span>
       </a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="mainnav">Menü</button>
@@ -56,27 +38,7 @@
           </div>
         </div>
         <aside class="hero-card" aria-label="HMZ auf einen Blick">
-          <div class="hero-logo-wrap">
-            <svg class="hmz-logo hmz-logo-hero" viewBox="0 0 220 220" aria-hidden="true">
-              <defs>
-                <path id="topArcHero" d="M 28,111 A 82,82 0 0,1 192,111"/>
-                <path id="bottomArcHero" d="M 38,139 A 82,82 0 0,0 182,139"/>
-                <clipPath id="logoCircleHero"><circle cx="110" cy="110" r="58"/></clipPath>
-              </defs>
-              <circle cx="110" cy="110" r="104" fill="#fff" stroke="#282878" stroke-width="5"/>
-              <text class="logo-ring-text" font-size="17"><textPath href="#topArcHero" startOffset="50%" text-anchor="middle">Jüstel &amp; Gebäudeservice</textPath></text>
-              <text class="logo-ring-text" font-size="15"><textPath href="#bottomArcHero" startOffset="50%" text-anchor="middle">GmbH &amp; Co. KG</textPath></text>
-              <text x="110" y="43" text-anchor="middle" class="logo-center-text">Hausmeisterzentrale</text>
-              <g clip-path="url(#logoCircleHero)">
-                <rect x="52" y="52" width="58" height="58" fill="#e53b35"/>
-                <rect x="110" y="52" width="58" height="58" fill="#f08a24"/>
-                <rect x="52" y="110" width="58" height="58" fill="#5aa4db"/>
-                <rect x="110" y="110" width="58" height="58" fill="#f4c928"/>
-              </g>
-              <circle cx="110" cy="110" r="58" fill="none" stroke="#282878" stroke-width="2"/>
-              <path d="M77 117 L110 82 L143 117 V148 H120 V126 H100 V148 H77 Z" fill="none" stroke="#fff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
-            </svg>
-          </div>
+          <div class="hero-logo-wrap"><img class="hmz-logo-hero" src="assets/hmz-logo-original.jpg" alt="HMZ Firmenlogo"></div>
           <strong>Seit 1992 für Sie da</strong>
           <p>Familienbetrieb aus Leegebruch mit einem flexiblen Team für die unterschiedlichsten Aufgaben rund um Gebäude und Grundstück.</p>
           <div class="mini-grid">
@@ -139,21 +101,23 @@
           <p>Sie haben eine konkrete Aufgabe oder suchen eine dauerhafte Objektbetreuung? Rufen Sie uns an oder schreiben Sie uns eine E-Mail.</p>
         </div>
         <div class="contact-card">
-          <p><strong>Hausmeisterzentrale Jüstel &amp; Gebäudeservice GmbH &amp; Co. KG</strong></p>
+          <p class="company-name"><strong>Hausmeisterzentrale Jüstel &amp; Gebäudeservice GmbH &amp; Co. KG</strong></p>
           <p>Eichenallee 39 b<br>16767 Leegebruch</p>
           <p><a href="tel:+493304250784">Telefon: 03304 250784</a><br><a href="mailto:info@hmz-juestel.de">info@hmz-juestel.de</a></p>
           <div class="hours">
             <strong>Bürozeiten</strong>
-            <div class="hours-table" role="table" aria-label="Bürozeiten">
-              <div class="hours-row hours-head" role="row"><span role="columnheader">Tag</span><span role="columnheader">Vormittag</span><span role="columnheader">Nachmittag</span></div>
-              <div class="hours-row" role="row"><b>Montag</b><span>07:00–12:00</span><span>13:00–16:00</span></div>
-              <div class="hours-row" role="row"><b>Dienstag</b><span>07:00–12:00</span><span>13:00–17:00</span></div>
-              <div class="hours-row" role="row"><b>Mittwoch</b><span>07:00–12:00</span><span>13:00–16:00</span></div>
-              <div class="hours-row" role="row"><b>Donnerstag</b><span>07:00–12:00</span><span>13:00–16:00</span></div>
-              <div class="hours-row" role="row"><b>Freitag</b><span>07:00–13:00</span><span>–</span></div>
-              <div class="hours-row" role="row"><b>Samstag</b><span class="closed">geschlossen</span><span>–</span></div>
-              <div class="hours-row" role="row"><b>Sonntag</b><span class="closed">geschlossen</span><span>–</span></div>
-            </div>
+            <table class="hours-table">
+              <thead><tr><th>Tag</th><th>Vormittag</th><th>Nachmittag</th></tr></thead>
+              <tbody>
+                <tr><th>Montag</th><td>07:00–12:00</td><td>13:00–16:00</td></tr>
+                <tr><th>Dienstag</th><td>07:00–12:00</td><td>13:00–17:00</td></tr>
+                <tr><th>Mittwoch</th><td>07:00–12:00</td><td>13:00–16:00</td></tr>
+                <tr><th>Donnerstag</th><td>07:00–12:00</td><td>13:00–16:00</td></tr>
+                <tr><th>Freitag</th><td>07:00–13:00</td><td>–</td></tr>
+                <tr><th>Samstag</th><td class="closed" colspan="2">geschlossen</td></tr>
+                <tr><th>Sonntag</th><td class="closed" colspan="2">geschlossen</td></tr>
+              </tbody>
+            </table>
             <p class="appointment-note"><strong>Persönliche Termine im Büro:</strong><br>Damit wir uns ausreichend Zeit für Ihr Anliegen nehmen können, bitten wir für persönliche Besuche um eine vorherige Terminvereinbarung.</p>
           </div>
         </div>
