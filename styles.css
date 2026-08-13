@@ -8,3 +8,6 @@ img[src="assets/service-hausmeister.webp"],img[src="assets/service-reinigung.web
 @media(max-width:620px){.nav-wrap{padding:7px 0 10px}.brand-text{display:block;font-size:.78rem;line-height:1.18}.mobile-brand-break{display:inline}.mainnav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;padding-left:68px;gap:5px 12px}.mainnav a{font-size:.82rem}.hmz-logo-header{flex:0 0 58px}}
 .mobile-brand-break{display:none}
 .brand-text{font-size:1.15rem}
+.field-hint{display:none;color:var(--red);font-size:.85rem;font-weight:800;line-height:1.35}.field-hint.show{display:block}
+.field-status{min-height:1.2em;color:var(--muted);font-size:.82rem;font-weight:600;line-height:1.35}.field-status.error{color:var(--red)}
+.inline-error{display:block;color:var(--red);font-size:.82rem;font-weight:800;line-height:1.35}.contact-form input.invalid,.contact-form textarea.invalid{border-color:var(--red);background:#fff8f8}
