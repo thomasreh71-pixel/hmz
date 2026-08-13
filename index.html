@@ -12,7 +12,25 @@
   <header class="site-header">
     <div class="wrap nav-wrap">
       <a class="brand" href="#top" aria-label="HMZ Startseite">
-        <span class="brand-mark">HMZ</span>
+        <svg class="hmz-logo hmz-logo-header" viewBox="0 0 220 220" role="img" aria-label="HMZ Hausmeisterzentrale Jüstel und Gebäudeservice">
+          <defs>
+            <path id="topArc" d="M 28,111 A 82,82 0 0,1 192,111"/>
+            <path id="bottomArc" d="M 38,139 A 82,82 0 0,0 182,139"/>
+            <clipPath id="logoCircle"><circle cx="110" cy="110" r="58"/></clipPath>
+          </defs>
+          <circle cx="110" cy="110" r="104" fill="#fff" stroke="#282878" stroke-width="5"/>
+          <text class="logo-ring-text" font-size="17"><textPath href="#topArc" startOffset="50%" text-anchor="middle">Jüstel &amp; Gebäudeservice</textPath></text>
+          <text class="logo-ring-text" font-size="15"><textPath href="#bottomArc" startOffset="50%" text-anchor="middle">GmbH &amp; Co. KG</textPath></text>
+          <text x="110" y="43" text-anchor="middle" class="logo-center-text">Hausmeisterzentrale</text>
+          <g clip-path="url(#logoCircle)">
+            <rect x="52" y="52" width="58" height="58" fill="#e53b35"/>
+            <rect x="110" y="52" width="58" height="58" fill="#f08a24"/>
+            <rect x="52" y="110" width="58" height="58" fill="#5aa4db"/>
+            <rect x="110" y="110" width="58" height="58" fill="#f4c928"/>
+          </g>
+          <circle cx="110" cy="110" r="58" fill="none" stroke="#282878" stroke-width="2"/>
+          <path d="M77 117 L110 82 L143 117 V148 H120 V126 H100 V148 H77 Z" fill="none" stroke="#fff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+        </svg>
         <span class="brand-text">Gebäudeservice</span>
       </a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="mainnav">Menü</button>
@@ -29,7 +47,7 @@
     <section class="hero" id="top">
       <div class="wrap hero-grid">
         <div>
-          <p class="eyebrow">Hausmeisterzentrale Jüstel & Gebäudeservice GmbH & Co. KG</p>
+          <p class="eyebrow">Hausmeisterzentrale Jüstel &amp; Gebäudeservice GmbH &amp; Co. KG</p>
           <h1>Ein Ansprechpartner.<br>Viele Leistungen.<br>Ein gepflegtes Objekt.</h1>
           <p class="lead">Ihr persönlicher Gebäudeservice für Immobilien, Außenanlagen und laufende Objektbetreuung – zuverlässig, vielseitig und ganzjährig.</p>
           <div class="actions">
@@ -38,10 +56,31 @@
           </div>
         </div>
         <aside class="hero-card" aria-label="HMZ auf einen Blick">
+          <div class="hero-logo-wrap">
+            <svg class="hmz-logo hmz-logo-hero" viewBox="0 0 220 220" aria-hidden="true">
+              <defs>
+                <path id="topArcHero" d="M 28,111 A 82,82 0 0,1 192,111"/>
+                <path id="bottomArcHero" d="M 38,139 A 82,82 0 0,0 182,139"/>
+                <clipPath id="logoCircleHero"><circle cx="110" cy="110" r="58"/></clipPath>
+              </defs>
+              <circle cx="110" cy="110" r="104" fill="#fff" stroke="#282878" stroke-width="5"/>
+              <text class="logo-ring-text" font-size="17"><textPath href="#topArcHero" startOffset="50%" text-anchor="middle">Jüstel &amp; Gebäudeservice</textPath></text>
+              <text class="logo-ring-text" font-size="15"><textPath href="#bottomArcHero" startOffset="50%" text-anchor="middle">GmbH &amp; Co. KG</textPath></text>
+              <text x="110" y="43" text-anchor="middle" class="logo-center-text">Hausmeisterzentrale</text>
+              <g clip-path="url(#logoCircleHero)">
+                <rect x="52" y="52" width="58" height="58" fill="#e53b35"/>
+                <rect x="110" y="52" width="58" height="58" fill="#f08a24"/>
+                <rect x="52" y="110" width="58" height="58" fill="#5aa4db"/>
+                <rect x="110" y="110" width="58" height="58" fill="#f4c928"/>
+              </g>
+              <circle cx="110" cy="110" r="58" fill="none" stroke="#282878" stroke-width="2"/>
+              <path d="M77 117 L110 82 L143 117 V148 H120 V126 H100 V148 H77 Z" fill="none" stroke="#fff" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+            </svg>
+          </div>
           <strong>Seit 1992 für Sie da</strong>
           <p>Familienbetrieb aus Leegebruch mit einem flexiblen Team für die unterschiedlichsten Aufgaben rund um Gebäude und Grundstück.</p>
           <div class="mini-grid">
-            <span><b>Objekte</b><small>privat & gewerblich</small></span>
+            <span><b>Objekte</b><small>privat &amp; gewerblich</small></span>
             <span><b>Service</b><small>ganzjährig</small></span>
             <span><b>Region</b><small>Oberhavel</small></span>
           </div>
@@ -60,31 +99,25 @@
     <section class="section section-soft" id="leistungen">
       <div class="wrap">
         <div class="section-head">
-          <div>
-            <p class="eyebrow">Leistungen</p>
-            <h2>Gebäudeservice, der im Alltag funktioniert</h2>
-          </div>
+          <div><p class="eyebrow">Leistungen</p><h2>Gebäudeservice, der im Alltag funktioniert</h2></div>
           <p>Von regelmäßiger Betreuung bis zur einzelnen Aufgabe – passend für Mietobjekte, Gewerbe, Praxen, Privathaushalte und Außenflächen.</p>
         </div>
         <div class="cards">
-          <article class="card"><span class="card-no">01</span><h3>Hausmeister- & Objektservice</h3><p>Objektkontrollen, Leerstandsbetreuung, Urlaubsvertretung, Kontrolle haustechnischer und mechanischer Einrichtungen sowie laufende Kleinreparaturen.</p></article>
+          <article class="card"><span class="card-no">01</span><h3>Hausmeister- &amp; Objektservice</h3><p>Objektkontrollen, Leerstandsbetreuung, Urlaubsvertretung, Kontrolle haustechnischer und mechanischer Einrichtungen sowie laufende Kleinreparaturen.</p></article>
           <article class="card"><span class="card-no">02</span><h3>Gebäudereinigung</h3><p>Unterhalts-, Büro-, Praxis-, Treppenhaus-, Glas-, Fenster-, Grund- und Bauabschlussreinigung sowie Teppich-, Polster- und Wintergartenreinigung.</p></article>
-          <article class="card"><span class="card-no">03</span><h3>Grün- & Außenanlagen</h3><p>Rasenpflege, Gehölzschnitt, Pflanzarbeiten, Vorgartenpflege, Rollrasen, Häckselarbeiten, Baumpflege und Pflege bestehender Außenanlagen.</p></article>
-          <article class="card"><span class="card-no">04</span><h3>Winter- & Straßenservice</h3><p>Winterdienst, Straßenreinigung, Sturmschadenbeseitigung und saisonale Arbeiten rund um sichere und gepflegte Wege und Grundstücksflächen.</p></article>
-          <article class="card"><span class="card-no">05</span><h3>Instandhaltung & Renovierung</h3><p>Kleinreparaturen, Fliesenausbesserungen, Laminat- und Teppicharbeiten, Türen und Fenster einstellen sowie kleinere Sanierungs- und Renovierungsarbeiten.</p></article>
-          <article class="card"><span class="card-no">06</span><h3>Entrümpelung & Zusatzdienste</h3><p>Entrümpelungen, Haushaltsauflösungen, Kleintransporte, umweltgerechte Entsorgung, Hochdruck- und Terrassenreinigung sowie weitere Leistungen nach Absprache.</p></article>
+          <article class="card"><span class="card-no">03</span><h3>Grün- &amp; Außenanlagen</h3><p>Rasenpflege, Gehölzschnitt, Pflanzarbeiten, Vorgartenpflege, Rollrasen, Häckselarbeiten, Baumpflege und Pflege bestehender Außenanlagen.</p></article>
+          <article class="card"><span class="card-no">04</span><h3>Winter- &amp; Straßenservice</h3><p>Winterdienst, Straßenreinigung, Sturmschadenbeseitigung und saisonale Arbeiten rund um sichere und gepflegte Wege und Grundstücksflächen.</p></article>
+          <article class="card"><span class="card-no">05</span><h3>Instandhaltung &amp; Renovierung</h3><p>Kleinreparaturen, Fliesenausbesserungen, Laminat- und Teppicharbeiten, Türen und Fenster einstellen sowie kleinere Sanierungs- und Renovierungsarbeiten.</p></article>
+          <article class="card"><span class="card-no">06</span><h3>Entrümpelung &amp; Zusatzdienste</h3><p>Entrümpelungen, Haushaltsauflösungen, Kleintransporte, umweltgerechte Entsorgung, Hochdruck- und Terrassenreinigung sowie weitere Leistungen nach Absprache.</p></article>
         </div>
       </div>
     </section>
 
     <section class="section" id="ueber-uns">
       <div class="wrap split">
-        <div>
-          <p class="eyebrow">Über uns</p>
-          <h2>Familienbetrieb mit gewachsenem Praxiswissen</h2>
-        </div>
+        <div><p class="eyebrow">Über uns</p><h2>Familienbetrieb mit gewachsenem Praxiswissen</h2></div>
         <div class="prose">
-          <p>1992 wurde der Grundstein für die Hausmeisterzentrale Jüstel und Gebäudeservice GmbH & Co. KG gelegt. Seitdem hat sich der Familienbetrieb in Leegebruch als feste Anlaufstelle für Dienstleistungen rund um Gebäude und Grundstück entwickelt.</p>
+          <p>1992 wurde der Grundstein für die Hausmeisterzentrale Jüstel und Gebäudeservice GmbH &amp; Co. KG gelegt. Seitdem hat sich der Familienbetrieb in Leegebruch als feste Anlaufstelle für Dienstleistungen rund um Gebäude und Grundstück entwickelt.</p>
           <p>Unser Team vereint unterschiedliche Berufszweige des Dienstleistungsgewerbes. So können wir klassische Objektbetreuung, Reinigung, Außenpflege und viele ergänzende Arbeiten sinnvoll miteinander verbinden.</p>
           <blockquote>Instandhaltung ist Werterhaltung.</blockquote>
         </div>
@@ -93,10 +126,7 @@
 
     <section class="section band" id="einsatzgebiet">
       <div class="wrap band-grid">
-        <div>
-          <p class="eyebrow light">Einsatzgebiet</p>
-          <h2>Leegebruch, Velten, Hennigsdorf und Umgebung</h2>
-        </div>
+        <div><p class="eyebrow light">Einsatzgebiet</p><h2>Leegebruch, Velten, Hennigsdorf und Umgebung</h2></div>
         <p>Wir betreuen Grundstücke und Immobilien in der Region Oberhavel. Zu unseren Kunden zählen Hausverwaltungen, Arztpraxen, Unternehmen, Privateigentümer sowie private Kunden und Mieter.</p>
       </div>
     </section>
@@ -109,15 +139,22 @@
           <p>Sie haben eine konkrete Aufgabe oder suchen eine dauerhafte Objektbetreuung? Rufen Sie uns an oder schreiben Sie uns eine E-Mail.</p>
         </div>
         <div class="contact-card">
-          <p><strong>Hausmeisterzentrale Jüstel & Gebäudeservice GmbH & Co. KG</strong></p>
+          <p><strong>Hausmeisterzentrale Jüstel &amp; Gebäudeservice GmbH &amp; Co. KG</strong></p>
           <p>Eichenallee 39 b<br>16767 Leegebruch</p>
           <p><a href="tel:+493304250784">Telefon: 03304 250784</a><br><a href="mailto:info@hmz-juestel.de">info@hmz-juestel.de</a></p>
           <div class="hours">
             <strong>Bürozeiten</strong>
-            <span>Mo 07:00–12:00 / 13:00–16:00</span>
-            <span>Di 07:00–12:00 / 13:00–17:00</span>
-            <span>Mi–Do 07:00–12:00 / 13:00–16:00</span>
-            <span>Fr 07:00–13:00</span>
+            <div class="hours-table" role="table" aria-label="Bürozeiten">
+              <div class="hours-row hours-head" role="row"><span role="columnheader">Tag</span><span role="columnheader">Vormittag</span><span role="columnheader">Nachmittag</span></div>
+              <div class="hours-row" role="row"><b>Montag</b><span>07:00–12:00</span><span>13:00–16:00</span></div>
+              <div class="hours-row" role="row"><b>Dienstag</b><span>07:00–12:00</span><span>13:00–17:00</span></div>
+              <div class="hours-row" role="row"><b>Mittwoch</b><span>07:00–12:00</span><span>13:00–16:00</span></div>
+              <div class="hours-row" role="row"><b>Donnerstag</b><span>07:00–12:00</span><span>13:00–16:00</span></div>
+              <div class="hours-row" role="row"><b>Freitag</b><span>07:00–13:00</span><span>–</span></div>
+              <div class="hours-row" role="row"><b>Samstag</b><span class="closed">geschlossen</span><span>–</span></div>
+              <div class="hours-row" role="row"><b>Sonntag</b><span class="closed">geschlossen</span><span>–</span></div>
+            </div>
+            <p class="appointment-note"><strong>Persönliche Termine im Büro:</strong><br>Damit wir uns ausreichend Zeit für Ihr Anliegen nehmen können, bitten wir für persönliche Besuche um eine vorherige Terminvereinbarung.</p>
           </div>
         </div>
       </div>
@@ -126,9 +163,9 @@
 
   <footer class="site-footer">
     <div class="wrap footer-grid">
-      <div><span class="brand-mark small">HMZ</span><p>Gebäudeservice aus Leegebruch.</p></div>
+      <div class="footer-brand"><span class="footer-hmz">HMZ</span><p>Gebäudeservice aus Leegebruch.</p></div>
       <div class="footer-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="agb.html">Hinweise / AGB</a></div>
-      <p class="copyright">© <span id="year"></span> Hausmeisterzentrale Jüstel & Gebäudeservice GmbH & Co. KG</p>
+      <p class="copyright">© <span id="year"></span> Hausmeisterzentrale Jüstel &amp; Gebäudeservice GmbH &amp; Co. KG</p>
     </div>
   </footer>
   <script src="script.js"></script>
