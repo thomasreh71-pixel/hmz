@@ -23,3 +23,4 @@ img[src="assets/service-objektkontrollen-neues-logo.png"]{object-position:center
 .hero-card .mini-grid{display:none}
 .hours-table .closed{color:var(--blue)!important;font-weight:400}
 .site-header{background:linear-gradient(rgba(255,255,255,.58),rgba(255,255,255,.58)),url("assets/hmz-welle-banner.jpg") center/100% 100% no-repeat}
+.hmz-logo-hero{width:min(220px,72vw)}
