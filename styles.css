@@ -33,3 +33,5 @@ img[src="assets/service-objektkontrollen-neues-logo.png"]{object-position:center
 .hero-card>strong{grid-column:2;grid-row:1;align-self:end}
 .hero-card>p{grid-column:2;grid-row:2;align-self:start}
 @media(max-width:620px){.hero .hero-card{grid-template-columns:1fr;grid-template-rows:auto}.hero-card .hero-logo-wrap,.hero-card>strong,.hero-card>p{grid-column:1;grid-row:auto}.hero-card .hero-logo-wrap{margin:4px 0 18px}.hero-card>strong,.hero-card>p{align-self:auto}}
+
+:root{--header-height:88px}html{scroll-padding-top:var(--header-height)}#leistungen,#ueber-uns,#einsatzgebiet,#kontakt{scroll-margin-top:var(--header-height)}
