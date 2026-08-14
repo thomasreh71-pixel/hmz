@@ -20,7 +20,12 @@ if(sofortFormular){
       hinweis.className='inline-error';
       hinweis.setAttribute('role','alert');
       hinweis.setAttribute('aria-live','polite');
-      feld.insertAdjacentElement('afterend',hinweis);
+      if(feld.type==='checkbox'){
+        const zustimmungstext=feld.parentElement.querySelector('span:not(.inline-error)');
+        zustimmungstext.insertAdjacentElement('afterend',hinweis);
+      }else{
+        feld.insertAdjacentElement('afterend',hinweis);
+      }
     }
     return hinweis;
   }
@@ -45,7 +50,7 @@ if(sofortFormular){
   let fokusRueckkehr=false;
   pruefFelder.forEach(feld=>{
     feld.addEventListener('blur',()=>{
-      if(!feldPruefen(feld)&&!fokusRueckkehr){
+      if(!feldPruefen(feld)&&feld.type!=='checkbox'&&!fokusRueckkehr){
         fokusRueckkehr=true;
         setTimeout(()=>{
           feld.focus();
